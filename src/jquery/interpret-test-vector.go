@@ -86,11 +86,18 @@ func extractIPFromID4ResultsString(s string) string {
 }
 
 func translateIPToColor(s string) string {
-	if s == eusips[0] {
-		return "G"
+	if len(eusips) == 2 {
+		if s == eusips[0] {
+			return "G"
+		}
+		if s == eusips[1] {
+			return "B"
+		}
 	}
-	if s == eusips[1] {
-		return "B"
+	if len(eusips) == 1 {
+		if s == eusips[0] {
+			return "G"
+		}
 	}
 	return "X"
 }
