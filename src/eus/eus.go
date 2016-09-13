@@ -58,6 +58,6 @@ func main() {
 //        mux.HandleFunc("/work", work)
 //        mux.HandleFunc("/status", status)
         mux.HandleFunc("/external", simulatedExternalUserService)
-        http.ListenAndServe(":8076", mux)
+        http.ListenAndServe(":8077", mux)
 }
 

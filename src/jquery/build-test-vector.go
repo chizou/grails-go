@@ -19,7 +19,7 @@ type testVector struct {
 
 func newTestVector(piazzaBox string, externalUserService string) *testVector {
 	p := new(testVector)
-	p.externalUserService = "http://" + externalUserService + ":8076/external"
+	p.externalUserService = "http://" + externalUserService + ":8077/external"
 	p.piazzaPrimeBox = piazzaBox
 	p.id1 = ""
 	p.id2 = ""
