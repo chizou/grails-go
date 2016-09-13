@@ -206,7 +206,7 @@ func main() {
 	mux.HandleFunc("/", home)
 	mux.HandleFunc("/work", work)
 	mux.HandleFunc("/status", status)
-	mux.HandleFunc("/external", simulatedExternalUserService)
+	//mux.HandleFunc("/external", simulatedExternalUserService)
 	http.ListenAndServe(":8076", mux)
 }
 
